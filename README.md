@@ -19,7 +19,6 @@ examples) and displays it on the OLED.  It waits a specified
 period (5 seconds by default) between card reads.  It also
 logs actions to serial for debugging purposes.
 ``
-...
 /*
  * Wiring table
  * Sunfounder SPI RFID-RC522 board
@@ -42,4 +41,4 @@ logs actions to serial for debugging purposes.
  * in the ESP library.  for I2C, the Adafruit library does not give a
  * method to redefine it (although other OLED libraries do).
  */
-...
+``
