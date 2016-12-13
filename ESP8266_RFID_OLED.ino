@@ -6,7 +6,7 @@
  
 /**
  * ----------------------------------------------------------------------------
- * This is a MFRC522 library example; see https://github.com/miguelbalboa/mfrc522
+ * This is a MFRC522 library example; see https://github.com/miguelbalboa/rfid
  * for further details and other examples.
  * 
  * NOTE: The library file MFRC522.h has a lot of useful info. Please read it.
@@ -123,12 +123,14 @@ void loop() {
         return;
 
     // Show some details of the PICC (that is: the tag/card)
+    // UID is a unique four hex pairs, e.g. E6 67 2A 12 
     Serial.print(F("Card UID:"));
     serial_dump_byte_array(mfrc522.uid.uidByte, mfrc522.uid.size);
     display.println("Card UID: ");
     oled_dump_byte_array(mfrc522.uid.uidByte, mfrc522.uid.size);
     Serial.println();
     display.println();
+    // PICC type, e.g. "MIFARE 1K0"
     Serial.print(F("PICC type: "));
     display.println(("PICC type: "));
     MFRC522::PICC_Type piccType = mfrc522.PICC_GetType(mfrc522.uid.sak);
