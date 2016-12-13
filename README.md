@@ -37,8 +37,8 @@ logs actions to serial for debugging purposes.
  * I2C SCL      5*            D1             SCL
  * I2C SDA      4*            D2             SDA
  * 
- * Note the * indicates that these pins are fixed.  For SPI, it's fixed
- * in the ESP library.  for I2C, the Adafruit library does not give a
- * method to redefine it (although other OLED libraries do).
+ * Note the * indicates that these pins are fixed in this particular usage.
+ * For SPI, it's fixed in the ESP library.  for I2C, the Adafruit library does
+ * not give a method to redefine it (although other OLED libraries do).
  */
 ```
