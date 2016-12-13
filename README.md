@@ -18,6 +18,7 @@ The code reads the card UID and TYPE (copied from Miguel's
 examples) and displays it on the OLED.  It waits a specified
 period (5 seconds by default) between card reads.  It also
 logs actions to serial for debugging purposes.
+``
 ...
 /*
  * Wiring table
